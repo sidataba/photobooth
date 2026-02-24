@@ -9,6 +9,7 @@
 
 body {
   @apply bg-[#121212] text-zinc-100 antialiased;
+  overflow: hidden;
 }
 
 .k-glass {
@@ -21,4 +22,26 @@ body {
 
 .k-input-label {
   @apply text-[10px] uppercase tracking-widest text-zinc-500 font-bold mb-1 block;
+}
+
+.k-section-header {
+  @apply flex items-center justify-between cursor-pointer select-none py-2 px-1 -mx-1 rounded-lg hover:bg-white/5 transition-colors;
+}
+
+.k-slider {
+  @apply w-full h-1 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-zinc-100;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+
+/* Preview modal */
+.preview-modal-backdrop {
+  @apply fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-[100];
+}
+.preview-modal {
+  @apply bg-zinc-900 rounded-2xl border border-white/10 p-6 max-w-4xl max-h-[90vh] overflow-auto shadow-2xl;
 }
