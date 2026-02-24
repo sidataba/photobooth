@@ -1,0 +1,5 @@
+{
+  "name": "K-Cinema Filter",
+  "description": "Automated Korean film scene color grading for your photos using tonal mapping.",
+  "requestFramePermissions": []
+}
